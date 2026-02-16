@@ -3,212 +3,232 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hiperlibro · Europa como entidad filosófica</title>
+    <title>Hiperlibro · Europa a través de sus ideas</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
 
   <body>
-    <!-- Header fijo -->
+    <!-- HEADER -->
     <header class="topbar">
-      <div class="topbar__brand">
+      <div class="brand">
         <div class="logo">EU</div>
-        <div class="brand-text">
-          <div class="brand-title">Hiperlibro</div>
-          <div class="brand-subtitle">Europa como entidad filosófica</div>
+        <div>
+          <div class="brand__title">Hiperlibro</div>
+          <div class="brand__subtitle">Europa a través de sus ideas</div>
         </div>
       </div>
 
-      <nav class="topbar__nav" aria-label="Navegación principal">
-        <a href="#inicio" class="navlink">Inicio</a>
-        <a href="#parte-i" class="navlink">Raíces</a>
-        <a href="#parte-ii" class="navlink">Renacimiento</a>
-        <a href="#modernidad" class="navlink">Modernidad</a>
-        <a href="#posnacional" class="navlink">UE</a>
-        <a href="#identidad" class="navlink">Identidad</a>
+      <nav class="topnav" aria-label="Navegación principal">
+        <a href="#intro" class="navlink">Introducción</a>
+        <a href="#parte-i" class="navlink">Parte I</a>
+        <a href="#parte-ii" class="navlink">Parte II</a>
+        <a href="#bloque-modernidad" class="navlink">Modernidad</a>
+        <a href="#bloque-crisis-reconstruccion" class="navlink">Crisis y reconstrucción</a>
+        <a href="#posnacional" class="navlink">Ciudadanía posnacional</a>
+        <a href="#glosario" class="navlink">Glosario</a>
       </nav>
     </header>
 
     <div class="layout">
-      <!-- Sidebar (navegación secundaria / índice) -->
-      <aside class="sidebar" aria-label="Índice del hiperlibro">
-        <div class="sidebar__box">
-          <div class="sidebar__title">Índice</div>
+      <!-- SIDEBAR -->
+      <aside class="sidebar" aria-label="Índice">
+        <div class="box">
+          <div class="box__title">Índice</div>
+
           <nav class="toc">
-            <a href="#intro" class="toc__link">Introducción</a>
+            <a href="#intro" class="toc__h1">Introducción</a>
 
-            <a href="#parte-i" class="toc__link">PARTE I · Raíces de Europa</a>
-            <a href="#grecia" class="toc__link">1) Grecia: mito → logos</a>
-            <a href="#roma" class="toc__link">2) Roma: ley y ciudadanía</a>
-            <a href="#cristianismo" class="toc__link">3) Cristianismo: poder y conocimiento</a>
-            <a href="#idea-europa" class="toc__link">4) Idea de Europa: construcción identitaria</a>
+            <a href="#parte-i" class="toc__h1">PARTE I: Las raíces de Europa</a>
+            <a href="#sec-1" class="toc__h2">1. Los orígenes griegos</a>
+            <a href="#sec-1-1" class="toc__h3">Del mito al logos</a>
+            <a href="#sec-1-2" class="toc__h3">La universalidad</a>
+            <a href="#sec-1-3" class="toc__h3">Isonomía y democracia</a>
 
-            <a href="#parte-ii" class="toc__link">PARTE II · Renacimiento y Modernidad temprana</a>
-            <a href="#nuevo-mundo" class="toc__link">5) Nuevo Mundo: Europa frente al Otro</a>
-            <a href="#reforma" class="toc__link">6) Ruptura de la unidad religiosa</a>
-            <a href="#humanismo" class="toc__link">7) Humanismo</a>
-            <a href="#ciencia-moderna" class="toc__link">8) Ideales de la ciencia moderna</a>
+            <a href="#sec-2" class="toc__h2">2. Raíces romanas</a>
+            <a href="#sec-2-1" class="toc__h3">El Derecho romano</a>
+            <a href="#sec-2-2" class="toc__h3">Ciudadanía imperial</a>
 
-            <a href="#modernidad" class="toc__link">Modernidad, razón y progreso</a>
-            <a href="#revolucion-cientifica" class="toc__link">Revolución científica</a>
-            <a href="#descartes" class="toc__link">Descartes y el “yo” moderno</a>
-            <a href="#tolerancia" class="toc__link">Libertad y tolerancia</a>
-            <a href="#politica-moderna" class="toc__link">Política moderna y derecho natural</a>
-            <a href="#ilustracion" class="toc__link">Ilustración</a>
-            <a href="#hegel" class="toc__link">Siglo XIX: Hegel e historia</a>
+            <a href="#sec-3" class="toc__h2">3. Cristianismo</a>
+            <a href="#sec-3-1" class="toc__h3">La pugna de dos ciudades</a>
+            <a href="#sec-3-2" class="toc__h3">Universidades medievales</a>
 
-            <a href="#posnacional" class="toc__link">Ciudadanía posnacional y UE</a>
-            <a href="#soberania" class="toc__link">Nueva soberanía</a>
-            <a href="#cosmopolita" class="toc__link">Democracia cosmopolita</a>
+            <a href="#sec-4" class="toc__h2">4. Idea de Europa</a>
+            <a href="#sec-4-1" class="toc__h3">Perspectiva griega y romana</a>
+            <a href="#sec-4-2" class="toc__h3">Europa cristiana</a>
 
-            <a href="#feminismos" class="toc__link">Feminismos y luchas identitarias</a>
-            <a href="#identidad" class="toc__link">Identidad europea</a>
-            <a href="#ortega-zambrano" class="toc__link">Ortega y Gasset & Zambrano</a>
-            <a href="#constitucion" class="toc__link">Constitución supranacional</a>
+            <a href="#parte-ii" class="toc__h1">PARTE II: Renacimiento e inicio de la Modernidad</a>
+            <a href="#sec-5" class="toc__h2">5. Nuevo Mundo</a>
+            <a href="#sec-6" class="toc__h2">6. Ruptura de la unidad religiosa</a>
+            <a href="#sec-7" class="toc__h2">7. Humanismo</a>
+            <a href="#sec-8" class="toc__h2">8. Ideales de la ciencia moderna</a>
+            <a href="#sec-8-1" class="toc__h3">Investigación frente a dogma</a>
+
+            <a href="#bloque-modernidad" class="toc__h1">Bloque: Revolución Científica → Modernidad</a>
+            <a href="#mod-1" class="toc__h2">Revolución Científica e ideales</a>
+            <a href="#mod-2" class="toc__h2">Inicio de la Modernidad</a>
+            <a href="#mod-3" class="toc__h2">Libertad y tolerancia</a>
+            <a href="#mod-4" class="toc__h2">Derecho natural</a>
+            <a href="#mod-5" class="toc__h2">Sistema-mundo</a>
+            <a href="#mod-6" class="toc__h2">Ilustración</a>
+            <a href="#mod-7" class="toc__h2">Revolución y educación</a>
+            <a href="#mod-8" class="toc__h2">Hegel</a>
+
+            <a href="#bloque-crisis-reconstruccion" class="toc__h1">Crisis y reconstrucción del proyecto moderno europeo</a>
+            <a href="#b166" class="toc__h2">Resumen ampliado</a>
+            <a href="#b166-1" class="toc__h3">Historia universal</a>
+            <a href="#b166-2" class="toc__h3">Estado-nación</a>
+            <a href="#b166-3" class="toc__h3">Liberalismo</a>
+            <a href="#b166-4" class="toc__h3">Marx</a>
+            <a href="#b166-5" class="toc__h3">Crisis</a>
+            <a href="#b166-6" class="toc__h3">Reconstrucción</a>
+            <a href="#b166-7" class="toc__h3">Horizonte europeo</a>
+
+            <a href="#posnacional" class="toc__h1">Ciudadanía posnacional</a>
+            <a href="#pos-1" class="toc__h2">Nueva soberanía</a>
+            <a href="#pos-2" class="toc__h2">Democracia cosmopolita</a>
+            <a href="#pos-3" class="toc__h2">Politización de diferencias</a>
+            <a href="#pos-4" class="toc__h2">Feminismos</a>
+            <a href="#pos-5" class="toc__h2">Luchas identitarias</a>
+            <a href="#pos-6" class="toc__h2">Identidad europea</a>
+            <a href="#pos-7" class="toc__h2">Ortega y Zambrano</a>
+            <a href="#pos-8" class="toc__h2">La idea de Europa</a>
+            <a href="#pos-9" class="toc__h2">Constitución supranacional</a>
+            <a href="#pos-10" class="toc__h2">Carácter performativo</a>
+
+            <a href="#glosario" class="toc__h1">Glosario</a>
           </nav>
-        </div>
-
-        <div class="sidebar__box">
-          <div class="sidebar__title">Etiquetas</div>
-          <div class="tags">
-            <a class="tag" href="#concepto-logos">Logos</a>
-            <a class="tag" href="#concepto-ius">Ius</a>
-            <a class="tag" href="#concepto-paideia">Paideia</a>
-            <a class="tag" href="#concepto-sistema-mundo">Sistema-mundo</a>
-            <a class="tag" href="#concepto-accion-comunicativa">Acción comunicativa</a>
-            <a class="tag" href="#concepto-patriotismo">Patriotismo constitucional</a>
-          </div>
-        </div>
-
-        <div class="sidebar__box">
-          <div class="sidebar__title">Buscar (mock)</div>
-          <label class="field">
-            <span class="field__label">Palabra clave</span>
-            <input class="field__input" type="text" placeholder="Ej. Ilustración, ciudadanía, identidad..." />
-          </label>
-          <p class="hint">Más adelante puedes conectarlo con JavaScript para filtrar secciones.</p>
         </div>
       </aside>
 
-      <!-- Contenido -->
+      <!-- MAIN -->
       <main class="content" id="inicio">
         <!-- HERO -->
         <section class="hero">
-          <div class="hero__text">
-            <h1>Europa como entidad filosófica</h1>
-            <p>
-              Europa aparece “entre lo real y lo ficticio”: existe por condiciones materiales,
-              pero también por ideas que se interpretan y se discuten. El recorrido se organiza
-              como aprendizaje histórico: raíces grecorromanas y cristianas → Renacimiento/Modernidad → crisis y reconstrucción → ciudadanía europea.
-            </p>
-            <div class="hero__actions">
-              <a class="btn" href="#parte-i">Empezar por las raíces</a>
-              <a class="btn btn--ghost" href="#posnacional">Ir a UE y ciudadanía posnacional</a>
-            </div>
-          </div>
-
-          <div class="hero__card">
-            <div class="meta">
-              <div class="meta__k">Enfoque</div>
-              <div class="meta__v">Ideas, historia y política</div>
-            </div>
-            <div class="meta">
-              <div class="meta__k">Estructura</div>
-              <div class="meta__v">Capítulos + conceptos + conexiones</div>
-            </div>
-            <div class="meta">
-              <div class="meta__k">Objetivo</div>
-              <div class="meta__v">Comprender → conectar → debatir</div>
-            </div>
+          <h1>Europa a través de sus ideas</h1>
+          <p>
+            Europa se presenta como una entidad “entre lo real y lo ficticio”: existe por condiciones materiales,
+            pero también por construcciones filosóficas. El pensamiento europeo se caracteriza por una reflexividad
+            constante que cuestiona sus propias bases, límites y legitimidades.
+          </p>
+          <div class="hero__actions">
+            <a class="btn" href="#parte-i">Empezar Parte I</a>
+            <a class="btn btn--ghost" href="#glosario">Ir al glosario</a>
           </div>
         </section>
 
         <!-- INTRO -->
         <section class="chapter" id="intro">
-          <div class="chapter__header">
-            <h2>Introducción</h2>
-            <p class="chapter__lead">
-              Europa se entiende como construcción filosófica reflexiva: se examina a sí misma,
-              sus límites y fundamentos, y su historia puede leerse como aprendizaje colectivo en etapas.
+          <header class="chapter__head">
+            <h2>Introducción: Europa como entidad filosófica</h2>
+            <p class="lead">
+              La historia de Europa puede leerse como un proceso de aprendizaje colectivo en cuatro etapas:
+              (1) raíces grecorromanas y cristianas, (2) Renacimiento y Modernidad temprana,
+              (3) Ilustración y consolidación de Estados-nación, y (4) crisis y reconstrucción del siglo XX.
+              Este hiperlibro desarrolla especialmente las dos primeras etapas, y enlaza con los debates posteriores
+              sobre modernidad, democracia e identidad.
+            </p>
+          </header>
+
+          <div class="callout">
+            <h4>Ruta sugerida</h4>
+            <p>
+              Si quieres leer “en orden”: Introducción → Parte I → Parte II → Revolución científica/Modernidad → Crisis y reconstrucción →
+              Ciudadanía posnacional. Si quieres leer “por ideas”, usa el índice lateral.
             </p>
           </div>
-
-          <article class="card">
-            <h3>Mapa de etapas (visión general)</h3>
-            <ul class="list">
-              <li><strong>Raíces:</strong> herencias griegas, romanas y cristianas.</li>
-              <li><strong>Renacimiento / Modernidad temprana:</strong> humanismo, ciencia, ruptura religiosa.</li>
-              <li><strong>Ilustración y Estado-nación:</strong> razón crítica, revolución, ciudadanía.</li>
-              <li><strong>Siglo XX y reconstrucción:</strong> democracia, pluralismo, UE y ciudadanía posnacional.</li>
-            </ul>
-
-            <p class="note">
-              Navega en red: por ejemplo, <a href="#humanismo">Humanismo</a> conecta con
-              <a href="#ciencia-moderna">ciencia moderna</a> y con <a href="#ilustracion">Ilustración</a>.
-            </p>
-          </article>
         </section>
 
-        <!-- PARTE I -->
+        <!-- PARTE I (SIN RECURSOS) -->
         <section class="chapter" id="parte-i">
-          <div class="chapter__header">
-            <h2>PARTE I · Las raíces de Europa</h2>
-            <p class="chapter__lead">
-              Del mito al logos, del logos a la ley, y de la ley a la tensión entre poder espiritual y poder político.
-              Aquí nacen las matrices de universalidad, ciudadanía y debate público.
+          <header class="chapter__head">
+            <h2>PARTE I: LAS RAÍCES DE EUROPA</h2>
+            <p class="lead">
+              En estas raíces se forman matrices centrales: paso del mito a la razón, organización jurídica y ciudadanía,
+              y tensión histórica entre poder político y poder religioso.
             </p>
-          </div>
+          </header>
 
-          <div class="grid">
-            <article class="card" id="grecia">
-              <h3>1) Orígenes griegos: del mito al logos</h3>
-              <p>
-                Se afirma la transición hacia un pensamiento racional: distinción entre
-                <strong>episteme</strong> (conocimiento) y <strong>doxa</strong> (opinión), y búsqueda de validez universal.
-              </p>
-              <p class="note">
-                Conceptos: <a href="#concepto-logos">logos</a>, <a href="#concepto-physis-nomos">physis/nomos</a>,
-                <a href="#concepto-paideia">paideia</a>, <a href="#concepto-isonomia">isonomía</a>.
-              </p>
-            </article>
+          <article class="section" id="sec-1">
+            <h3>1. Los orígenes griegos: del mito al logos</h3>
 
-            <article class="card" id="roma">
-              <h3>2) Raíces romanas: ley y ciudadanía</h3>
-              <p>
-                Roma aporta razón práctica: el <strong>ius</strong> organiza el Imperio; aparecen categorías como
-                <strong>ius naturale</strong> e <strong>ius gentium</strong>, base de una idea de derechos más universales.
-                La ciudadanía se vuelve estatus legal extensible (Caracalla).
-              </p>
-              <p class="note">
-                Conecta con: <a href="#politica-moderna">derecho natural</a> y <a href="#posnacional">ciudadanía posnacional</a>.
-              </p>
-            </article>
-          </div>
+            <h4 id="sec-1-1">Del mito al logos</h4>
+            <p>
+              La transición del pensamiento griego se expresa en la distinción entre conocimiento verdadero (episteme)
+              y mera opinión (doxa). Con ello aparece la razón como un saber universal, no étnico, capaz de trascender
+              particularidades culturales.
+            </p>
 
-          <div class="grid">
-            <article class="card" id="cristianismo">
-              <h3>3) Cristianismo: poder y conocimiento</h3>
-              <p>
-                Se instala la tensión “dos ciudades” (Agustín) y la discusión sobre legitimidad entre lo secular y lo eclesiástico.
-                Surgen universidades medievales como red policéntrica de saber; el latín como lengua común.
-              </p>
-              <p class="note">
-                Conecta con: <a href="#reforma">Reforma</a> y <a href="#ilustracion">razón crítica</a>.
-              </p>
-            </article>
+            <h4 id="sec-1-2">La universalidad</h4>
+            <p>
+              La filosofía griega introduce la distinción entre physis (naturaleza) y nomos (convención), lo que permite
+              cuestionar costumbres particulares buscando principios válidos universalmente. Esta búsqueda de validez
+              universal se vuelve una característica definitoria del pensamiento europeo.
+            </p>
 
-            <article class="card" id="idea-europa">
-              <h3>4) Idea de Europa: construcción identitaria</h3>
-              <p>
-                Europa se consolida como identidad histórica en contraste (por ejemplo, frente al Islam desde el siglo VII).
-                Se forma una “Europa cristiana” y, a la vez, absorbe cultura griega también vía mediaciones.
-              </p>
-              <p class="note">
-                Puente: <a href="#identidad">identidad europea</a> y <a href="#constitucion">proyecto constitucional</a>.
-              </p>
-            </article>
-          </div>
+            <h4 id="sec-1-3">Isonomía y democracia</h4>
+            <p>
+              En la polis ateniense surge el debate democrático con base en la isonomía (igualdad ante la ley).
+              Los ciudadanos participan en decisiones políticas y se instala el precedente de deliberación pública.
+              Para sostener esa ciudadanía activa, aparece la paideia como formación del ciudadano.
+            </p>
+          </article>
 
-          <nav class="pager" aria-label="Navegación entre secciones">
+          <article class="section" id="sec-2">
+            <h3>2. Las raíces romanas: ley y ciudadanía</h3>
+
+            <h4 id="sec-2-1">El Derecho romano</h4>
+            <p>
+              Roma aporta organización basada en el Derecho (ius) como razón práctica aplicada a la administración.
+              Se distinguen ius naturale e ius gentium, lo cual abre la base para pensar derechos universales más allá
+              de cada pueblo particular.
+            </p>
+
+            <h4 id="sec-2-2">Ciudadanía imperial</h4>
+            <p>
+              Frente a una ciudadanía entendida como participación política (Aristóteles), Roma la adapta al Imperio y la
+              transforma en estatus legal. El Decreto de Caracalla (212 d.C.) extiende la ciudadanía a los habitantes libres,
+              creando una comunidad jurídica común bajo la pax romana.
+            </p>
+          </article>
+
+          <article class="section" id="sec-3">
+            <h3>3. El Cristianismo: poder y conocimiento</h3>
+
+            <h4 id="sec-3-1">La pugna de dos ciudades</h4>
+            <p>
+              San Agustín plantea la dualidad entre ciudad terrena y ciudad de Dios, generando un debate permanente sobre
+              relaciones entre poder político y religioso. Autores como Tomás de Aquino, Dante y Marsilio de Padua
+              impulsan la separación entre lo secular y lo eclesiástico, mientras Nicolás de Cusa introduce consenso y
+              civilitas como fundamentos de legitimidad política.
+            </p>
+
+            <h4 id="sec-3-2">Las universidades medievales</h4>
+            <p>
+              En el siglo XIII surgen universidades como espacios de simbiosis entre tradición académica griega y cultura cristiana.
+              Forman una red policéntrica que conecta Europa mediante el diálogo; el latín funciona como lengua común,
+              creando un “mercado común de ideas” más allá de fronteras.
+            </p>
+          </article>
+
+          <article class="section" id="sec-4">
+            <h3>4. La idea de Europa: construcción identitaria</h3>
+
+            <h4 id="sec-4-1">Perspectiva griega y romana</h4>
+            <p>
+              Para los griegos, “Europa” era un concepto poco significativo; la idea cobra fuerza con el declive griego.
+              En Roma, el término existía pero el gentilicio “europeos” era raro. La división del Imperio en Oriente y Occidente
+              favorece que “Europa” designe preferentemente la parte occidental.
+            </p>
+
+            <h4 id="sec-4-2">Europa cristiana</h4>
+            <p>
+              Desde el siglo VII Europa se constituye en contraposición al Islam, y ciertos eventos se convierten en referencias identitarias.
+              De modo paradójico, el cristianismo absorbe cultura griega a través de intermediarios musulmanes y judíos, y Europa termina
+              identificándose con el cristianismo como identidad continental.
+            </p>
+          </article>
+
+          <nav class="pager" aria-label="Navegación">
             <a class="pager__link" href="#intro">← Anterior</a>
             <a class="pager__link" href="#inicio">Índice ↑</a>
             <a class="pager__link" href="#parte-ii">Siguiente →</a>
@@ -217,227 +237,336 @@
 
         <!-- PARTE II -->
         <section class="chapter" id="parte-ii">
-          <div class="chapter__header">
-            <h2>PARTE II · Renacimiento e inicio de la Modernidad</h2>
-            <p class="chapter__lead">
-              El Renacimiento se presenta como “luz” frente a “oscuridad”: problematiza certezas heredadas,
-              re-centra al ser humano y prepara el salto de ciencia, política y cultura hacia la Modernidad.
+          <header class="chapter__head">
+            <h2>PARTE II: RENACIMIENTO E INICIO DE LA MODERNIDAD</h2>
+            <p class="lead">
+              El Renacimiento se narra como “luz” frente a “oscuridad”: un despertar que problematiza certezas heredadas,
+              re-centra al ser humano y prepara el salto hacia modernidad científica, política y cultural.
             </p>
-          </div>
+          </header>
 
-          <div class="grid">
-            <article class="card" id="nuevo-mundo">
-              <h3>5) Descubrimiento del Nuevo Mundo: Europa frente al Otro</h3>
-              <p>
-                El encuentro con América reconfigura la identidad europea: surge una escala evolutiva imaginada
-                (salvajismo/barbarie/civilización) y una tensión entre pluralidad cultural y etnocentrismo.
-                También aparecen críticas (Las Casas, Montaigne).
-              </p>
-              <p class="note">
-                Conecta con: <a href="#concepto-sistema-mundo">sistema-mundo</a>.
-              </p>
-            </article>
-
-            <article class="card" id="reforma">
-              <h3>6) Ruptura de la unidad religiosa</h3>
-              <p>
-                La Reforma protestante divide el cristianismo y Occidente; la fe se interioriza y
-                se acelera la separación Iglesia/Estado (secularización como diferenciación de esferas).
-                La unidad se recompone parcialmente por la cultura (artes, letras, ciencias).
-              </p>
-            </article>
-          </div>
-
-          <div class="grid">
-            <article class="card" id="humanismo">
-              <h3>7) Humanismo: centralidad del ser humano</h3>
-              <p>
-                Renacen valores clásicos; la <strong>humanitas</strong> se entiende como educación completa
-                (paralela a la <a href="#concepto-paideia">paideia</a>). La imprenta facilita circulación de fuentes.
-                Erasmo defiende tolerancia y pacifismo.
-              </p>
-              <p class="note">
-                Puente: del humanismo a <a href="#ciencia-moderna">ciencia moderna</a> y <a href="#ilustracion">Ilustración</a>.
-              </p>
-            </article>
-
-            <article class="card" id="ciencia-moderna">
-              <h3>8) Ideales de la ciencia moderna</h3>
-              <p>
-                Investigar y experimentar frente a dogma. Se consolida la razón como criterio de verdad;
-                Galileo/Bruno simbolizan la autonomía intelectual y la matemática como lenguaje de la naturaleza.
-              </p>
-            </article>
-          </div>
-
-          <nav class="pager" aria-label="Navegación entre secciones">
-            <a class="pager__link" href="#parte-i">← Anterior</a>
-            <a class="pager__link" href="#inicio">Índice ↑</a>
-            <a class="pager__link" href="#modernidad">Siguiente →</a>
-          </nav>
-        </section>
-
-        <!-- MODERNIDAD -->
-        <section class="chapter" id="modernidad">
-          <div class="chapter__header">
-            <h2>De la Revolución Científica a la Modernidad</h2>
-            <p class="chapter__lead">
-              Se instala la tríada <strong>Modernidad – razón – progreso</strong>: verdad científica basada en datos,
-              método universal, sujeto racional, y reconfiguración política (soberanía, derechos).
+          <article class="section" id="sec-5">
+            <h3>5. El descubrimiento del Nuevo Mundo: Europa frente al Otro</h3>
+            <p>
+              El encuentro con América impacta la identidad europea moderna al confrontarla con “lo radicalmente otro”.
+              Se crea una escala evolutiva (salvajismo, barbarie, civilización) y el mito del “Buen Salvaje” como punto cero.
+              A la vez surgen críticas: Las Casas defiende la igualdad esencial de los indígenas y Montaigne cuestiona la
+              supuesta superioridad europea. La circunnavegación de Magallanes simboliza la unificación del mundo y anticipa
+              la idea de globalización. Se hace visible la tensión entre pluralidad cultural y etnocentrismo colonizador.
             </p>
-          </div>
+          </article>
 
-          <section class="section" id="revolucion-cientifica">
-            <h3 class="section__title">Revolución científica</h3>
-            <article class="card">
-              <p>
-                Entre Copérnico y Newton se consolida la “verdad científica” (hechos medibles),
-                y la matemática como lenguaje de lo real. El cambio fue intelectual: cambian las preguntas,
-                y la ciencia se orienta a transformar el mundo.
-              </p>
+          <article class="section" id="sec-6">
+            <h3>6. La ruptura de la unidad religiosa</h3>
+            <p>
+              La Reforma protestante del siglo XVI domina el pensamiento europeo, replanteando autoridad y relación entre
+              espiritual y temporal. Lutero impulsa reformas que cuestionan superioridad espiritual, autoridad papal y exclusividad
+              para convocar concilios. El protestantismo enfatiza fe interior y repudia intelectualismo. Las consecuencias incluyen
+              división del cristianismo y de Occidente; aparece la secularización como separación entre Iglesia y Estado.
+              Esta ruptura se compensa parcialmente por una unidad cultural (artes, letras, ciencias) y fortalece una Europa laica y cosmopolita.
+            </p>
+          </article>
 
-              <div class="chips">
-                <a class="chip" href="#concepto-analisis-cuantitativo">Análisis cuantitativo</a>
-                <a class="chip" href="#concepto-matematica">Matemática</a>
-                <a class="chip" href="#concepto-dominio">Saber de dominio</a>
-              </div>
-            </article>
-          </section>
+          <article class="section" id="sec-7">
+            <h3>7. El Humanismo: centralidad del ser humano</h3>
+            <p>
+              El humanismo es el movimiento intelectual clave del Renacimiento: renace el valor de Grecia y Roma y se centra en el ser humano.
+              Petrarca encarna la transición; se revalorizan lenguas, filosofía y literatura, separando “letras” de “ciencias”.
+              Humanitas se entiende como educación completa (similar a paideia). Sus pilares incluyen: circulación de fuentes clásicas
+              (impulsada por la imprenta), estudio de textos precristianos, cultivo de artes, confianza en la capacidad humana y énfasis en diálogo.
+            </p>
+            <p>
+              En este contexto se reconfiguran ideas de conocimiento y poder: Copérnico desplaza la Tierra del centro del universo,
+              lo cual estimula investigación. La razón gana centralidad y la fe se relega al ámbito íntimo. Erasmo propone cultura y tolerancia
+              como armas contra dogmas; defiende pacifismo y comprensión del diferente. Se consolidan ideas laicas universalizables,
+              aunque el “mito del hombre-sujeto” entrará en crisis en el siglo XX.
+            </p>
+          </article>
 
-          <section class="section" id="descartes">
-            <h3 class="section__title">Descartes y el “yo” moderno</h3>
-            <article class="card">
-              <p>
-                Descartes propone método universal y funda el sujeto moderno:
-                la duda metódica conduce a una certeza mínima (“pienso, luego existo”).
-                La verdad no se revela: se busca con esfuerzo racional.
-              </p>
-            </article>
-          </section>
+          <article class="section" id="sec-8">
+            <h3>8. Los ideales de la ciencia moderna</h3>
 
-          <section class="section" id="tolerancia">
-            <h3 class="section__title">Libertad y tolerancia</h3>
-            <article class="card">
-              <p>
-                La tolerancia nace ligada a libertad religiosa, pero evoluciona hacia un fundamento racional:
-                se tolera al otro como ser racional con derecho a libertad de conciencia.
-                Se convierte en pilar ético-político europeo.
-              </p>
-            </article>
-          </section>
+            <h4 id="sec-8-1">Investigación frente a dogma</h4>
+            <p>
+              La modernidad espiritual se describe como disolución de sistemas medievales y delimitación de esferas:
+              religión, poesía, ciencia, moral y derecho. Se afirma la independencia intelectual frente a la autoridad y la razón humana
+              se vuelve criterio para encontrar la verdad. Bruno y Galileo representan la defensa de la razón libre, la demostración matemática
+              y el rechazo de la autoridad como argumento. El conocimiento se concibe como investigar, experimentar y comprender racionalmente.
+            </p>
+            <p>
+              La ciencia ocupa el lugar antes sostenido por autoridad eclesiástica debilitada. Su autoridad es intelectual, no gubernamental:
+              no castiga por no creer ni recompensa por creer, y apela a la razón.
+            </p>
+          </article>
 
-          <section class="section" id="politica-moderna">
-            <h3 class="section__title">Política moderna y derecho natural</h3>
-            <article class="card">
-              <ul class="list">
-                <li><strong>Maquiavelo:</strong> política como técnica de gobierno.</li>
-                <li><strong>Bodin:</strong> soberanía del Estado.</li>
-                <li><strong>Locke:</strong> pacto para proteger derechos naturales (libertad y propiedad).</li>
-              </ul>
-            </article>
-          </section>
+          <!-- RECURSOS (Parte II = infografia1.png) -->
+          <section class="recursos" aria-label="Recursos Parte II">
+            <h3>Recursos visuales</h3>
 
-          <section class="section" id="ilustracion">
-            <h3 class="section__title">Ilustración</h3>
-            <article class="card">
-              <p>
-                Razón crítica y optimismo progresista. Kant: <em>Sapere aude</em>.
-                La Enciclopedia difunde saber para combatir dogmatismo; el ensayo se vuelve forma pública de debate.
-                La Revolución Francesa intenta materializar libertad/igualdad, aunque persisten brechas entre ideal y realidad.
-              </p>
-            </article>
-          </section>
-
-          <section class="section" id="hegel">
-            <h3 class="section__title">Siglo XIX: Hegel e historia</h3>
-            <article class="card">
-              <p>
-                Hegel propone dialéctica e historia como despliegue racional hacia la conciencia de libertad universal:
-                los hechos particulares “tienen sentido” si ratifican ese avance del espíritu.
-              </p>
-            </article>
-          </section>
-
-          <!-- Conceptos (plantillas) -->
-          <section class="section">
-            <h3 class="section__title">Fichas de conceptos</h3>
-
-            <div class="cards">
-              <article class="concept" id="concepto-logos">
-                <div class="concept__top">
-                  <h4>Logos</h4>
-                  <span class="badge">Concepto</span>
+            <div class="recursos__grid recursos__grid--layoutA">
+              <section class="media">
+                <h4>Infografía</h4>
+                <div class="media__frame">
+                  <img src="./img/infografia1.png" alt="Infografía Parte II" />
                 </div>
-                <p>Racionalidad que busca validez universal; transición clave del pensamiento griego del mito a la razón.</p>
-                <div class="concept__links">
-                  <a href="#grecia">Volver a Grecia</a>
-                  <a href="#ilustracion">Conectar con Ilustración</a>
-                </div>
-              </article>
+              </section>
 
-              <article class="concept" id="concepto-ius">
-                <div class="concept__top">
-                  <h4>Ius</h4>
-                  <span class="badge">Concepto</span>
-                </div>
-                <p>Derecho romano como razón práctica organizadora; base para pensar ciudadanía y derechos más universales.</p>
-                <div class="concept__links">
-                  <a href="#roma">Volver a Roma</a>
-                  <a href="#posnacional">Puente a ciudadanía posnacional</a>
-                </div>
-              </article>
+            <section class="media">
+            <h4>Mapa mental</h4>
+            <div class="media__frame">
+                <img src="./img/mapamental1.png" alt="Mapa mental Parte II" />
+            </div>
+            </section>
 
-              <article class="concept" id="concepto-paideia">
-                <div class="concept__top">
-                  <h4>Paideia</h4>
-                  <span class="badge">Concepto</span>
-                </div>
-                <p>Formación del ciudadano para deliberación y vida pública; eco en la “humanitas” renacentista.</p>
-                <div class="concept__links">
-                  <a href="#humanismo">Ir a Humanismo</a>
-                  <a href="#ilustracion">Ir a Educación en Ilustración</a>
-                </div>
-              </article>
-
-              <article class="concept" id="concepto-physis-nomos">
-                <div class="concept__top">
-                  <h4>Physis / Nomos</h4>
-                  <span class="badge">Concepto</span>
-                </div>
-                <p>Distingue naturaleza (physis) de convención (nomos); habilita criticar costumbres y buscar principios universales.</p>
-                <div class="concept__links">
-                  <a href="#grecia">Volver a Grecia</a>
-                </div>
-              </article>
-
-              <article class="concept" id="concepto-isonomia">
-                <div class="concept__top">
-                  <h4>Isonomía</h4>
-                  <span class="badge">Concepto</span>
-                </div>
-                <p>Igualdad ante la ley; base para deliberación democrática en la polis.</p>
-                <div class="concept__links">
-                  <a href="#grecia">Volver a Grecia</a>
-                  <a href="#posnacional">Conectar con ciudadanía europea</a>
-                </div>
-              </article>
-
-              <article class="concept" id="concepto-sistema-mundo">
-                <div class="concept__top">
-                  <h4>Sistema-mundo</h4>
-                  <span class="badge">Concepto</span>
-                </div>
-                <p>Europa se define frente al “otro” (América) y organiza el mundo con centro/periferia; Modernidad como marco legitimador.</p>
-                <div class="concept__links">
-                  <a href="#nuevo-mundo">Volver al Nuevo Mundo</a>
-                  <a href="#posnacional">Conectar con globalización</a>
-                </div>
-              </article>
+            <section class="media">
+            <h4>Línea del tiempo</h4>
+            <div class="media__frame">
+                <img src="./img/linea1.png" alt="Línea del tiempo Parte II" />
+            </div>
+            </section>
             </div>
           </section>
 
-          <nav class="pager" aria-label="Navegación entre secciones">
+          <nav class="pager" aria-label="Navegación">
+            <a class="pager__link" href="#parte-i">← Anterior</a>
+            <a class="pager__link" href="#inicio">Índice ↑</a>
+            <a class="pager__link" href="#bloque-modernidad">Siguiente →</a>
+          </nav>
+        </section>
+
+        <!-- BLOQUE MODERNIDAD -->
+        <section class="chapter" id="bloque-modernidad">
+          <header class="chapter__head">
+            <h2>Bloque: De la Revolución Científica a la Modernidad</h2>
+            <p class="lead">
+              En este bloque se consolida la “verdad científica” basada en datos, el método racional, la tríada modernidad–razón–progreso,
+              y una reconfiguración política que llevará a nuevas ideas de soberanía, derechos y ciudadanía.
+            </p>
+          </header>
+
+          <article class="section" id="mod-1">
+            <h3>La Revolución Científica y los Ideales de la Ciencia</h3>
+            <p>
+              Entre Copérnico (1543) y Newton (1687) nace la verdad científica basada en hechos medibles frente a verdades reveladas.
+              El cambio fue ante todo intelectual: cambiaron las preguntas a la realidad. La ciencia pasa de teórica a práctica, orientada a cambiar el mundo.
+              Bacon es visto como “profeta de la técnica” al imaginar civilización como dominio humano sobre naturaleza.
+            </p>
+            <ul class="list">
+              <li><strong>Copérnico:</strong> heliocentrismo.</li>
+              <li><strong>Brahe:</strong> observación meticulosa.</li>
+              <li><strong>Kepler:</strong> órbitas elípticas y velocidades variables.</li>
+              <li><strong>Galileo:</strong> matematización de lo real.</li>
+              <li><strong>Newton:</strong> unificación de leyes celestes y terrestres (gravedad).</li>
+            </ul>
+            <p>
+              La esencia se resume en: análisis cuantitativo, ruptura con ciencia antigua y matemática como lenguaje único.
+              El saber se vuelve “saber de dominio” para controlar y progresar sobre la naturaleza.
+            </p>
+          </article>
+
+          <article class="section" id="mod-2">
+            <h3>El Inicio de la Modernidad: Universalismo y Razón</h3>
+            <p>
+              La modernidad surge plenamente en el siglo XVII cuando el ser humano toma conciencia de posibilidades abiertas,
+              rechaza absolutismos y busca orden mediante la razón. Descartes aporta método universal y funda el “yo” moderno:
+              duda metódica que conduce a la certeza mínima del ser pensante (pienso, luego existo).
+            </p>
+            <p>
+              La verdad no “se revela”: debe buscarse con esfuerzo racional. Se instaura así la tríada:
+              <strong>Modernidad – razón – progreso</strong>, y una autonomía de la razón frente al dogma medieval.
+            </p>
+          </article>
+
+          <article class="section" id="mod-3">
+            <h3>Libertad, Tolerancia y el Hombre Moderno</h3>
+            <p>
+              El ser humano europeo se sitúa en un cosmos interpretado científicamente; la fe se vuelve interioridad espiritual,
+              lo que permite diversidad de estilos de vida. La tolerancia nace ligada a libertad religiosa tras la Reforma,
+              pero en el siglo XVII se fundamenta en la naturaleza racional del ser humano: se tolera al otro como ser racional
+              con el mismo derecho a libertad de conciencia.
+            </p>
+            <p>
+              En los siglos XVIII y XIX esta idea se conecta con el liberalismo y se convierte en pilar ético-político europeo.
+            </p>
+          </article>
+
+          <article class="section" id="mod-4">
+            <h3>La Reconfiguración Política y el Derecho Natural</h3>
+            <p>
+              La política moderna se transforma: Maquiavelo la entiende como técnica del buen gobierno (profesionaliza y “democratiza” la gestión).
+              Bodin teoriza soberanía absoluta del Estado distinguiendo Estado y gobierno. Locke propone pacto social para garantizar derechos naturales,
+              destacando libertad y propiedad; el Estado es medio para proteger derechos individuales.
+            </p>
+          </article>
+
+          <article class="section" id="mod-5">
+            <h3>La Autoconciencia de Europa y el Sistema-Mundo</h3>
+            <p>
+              Se afirma la existencia de un “sistema de usos europeos” previo a las naciones. El descubrimiento de América ayuda a Europa a definirse
+              frente a un “otro” y configura el sistema-mundo con Europa como centro y el resto como periferia. En este marco, la modernidad funciona
+              como estructura ideológica que justifica hegemonía mundial.
+            </p>
+          </article>
+
+          <article class="section" id="mod-6">
+            <h3>La Ilustración: El Siglo de las Luces</h3>
+            <p>
+              La Ilustración se define por razón crítica: la tradición deja de ser fuente de verdad, y la verdad debe pasar por crítica racional.
+              El siglo XVIII expresa optimismo progresista (conocimiento y técnica traerán bienestar y justicia).
+              Voltaire encarna ese optimismo pero advierte sobre una racionalidad reducida a “cálculo” de miserias.
+              Kant define el lema <em>Sapere aude</em>, invitando a salir de minoría de edad intelectual.
+            </p>
+            <p>
+              La difusión es clave: la Enciclopedia no solo compendia datos, también divulga espíritu crítico contra absolutismo.
+              Se populariza el ensayo como formato breve para reflexión personal y polémica pública.
+            </p>
+          </article>
+
+          <article class="section" id="mod-7">
+            <h3>Acción Política, Revolución y Educación</h3>
+            <p>
+              La educación aparece como puente entre teoría y práctica para transformar sociedad según ideales ilustrados,
+              aunque enfrenta censuras (Rousseau). El concepto de revolución cambia: de retorno astronómico a demolición de lo antiguo
+              para construir lo nuevo. La Revolución Francesa elimina privilegios aristocráticos y poder de la Iglesia,
+              pero persiste brecha entre promesas de libertad y realidad. Rousseau afirma que legitimidad reside en voluntad de los sujetos.
+            </p>
+          </article>
+
+          <article class="section" id="mod-8">
+            <h3>Siglo XIX: Dialéctica, Espíritu e Historia</h3>
+            <p>
+              Hegel intenta superar límites kantianos proponiendo dialéctica: la razón se despliega a través de la historia.
+              La historia tiene lógica: progreso hacia conciencia de libertad universal; los acontecimientos particulares
+              “tienen sentido” si ratifican ese avance del espíritu universal. El progreso queda como caminar hacia adelante con destino claro.
+            </p>
+          </article>
+
+          <!-- RECURSOS (Modernidad = infografia2.png) -->
+          <section class="recursos" aria-label="Recursos Modernidad">
+            <h3>Recursos visuales</h3>
+
+            <div class="recursos__grid recursos__grid--layoutA">
+              <section class="media">
+                <h4>Infografía</h4>
+                <div class="media__frame">
+                  <img src="./img/infografia2.png" alt="Infografía Modernidad" />
+                </div>
+              </section>
+
+                <section class="media">
+                <h4>Mapa mental</h4>
+                <div class="media__frame">
+                    <img src="./img/mapamental2.png" alt="Mapa mental Modernidad" />
+                </div>
+                </section>
+
+                <section class="media">
+                <h4>Línea del tiempo</h4>
+                <div class="media__frame">
+                    <img src="./img/linea3.png" alt="Línea del tiempo Modernidad" />
+                </div>
+                </section>
+            </div>
+          </section>
+
+          <nav class="pager" aria-label="Navegación">
             <a class="pager__link" href="#parte-ii">← Anterior</a>
+            <a class="pager__link" href="#inicio">Índice ↑</a>
+            <a class="pager__link" href="#bloque-crisis-reconstruccion">Siguiente →</a>
+          </nav>
+        </section>
+
+        <!-- BLOQUE 166–241 (RENOMBRADO) -->
+        <section class="chapter" id="bloque-crisis-reconstruccion">
+          <header class="chapter__head">
+            <h2>Crisis y reconstrucción del proyecto moderno europeo</h2>
+            <p class="lead">
+              Reconstrucción del pensamiento europeo moderno: promesas de razón y progreso, quiebres del siglo XX
+              y debates contemporáneos sobre democracia, sociedad civil y Europa como proyecto.
+            </p>
+          </header>
+
+          <article class="section" id="b166">
+            <h3>Resumen ampliado</h3>
+
+            <h4 id="b166-1">Progreso e historia universal: la confianza moderna</h4>
+            <p>
+              La historia universal (afín a Hegel) entiende la historia como proceso racional con sentido que avanza hacia mayores niveles de libertad.
+              Europa se interpreta como escenario donde la razón se vuelve consciente y organiza la vida social. El progreso es técnico, moral y político.
+              Sin embargo, el siglo XX cuestiona la idea de sentido unificado: progreso puede coexistir con barbarie.
+            </p>
+
+            <h4 id="b166-2">Nación, Estado y nacionalismo: identidad y tensión</h4>
+            <p>
+              El Estado-nación se consolida como forma política central: nación legitima al Estado y ciudadanía da pertenencia.
+              El nacionalismo es ambivalente: integra cívicamente (derechos, cohesión) pero puede excluir cuando se define como identidad homogénea.
+              En modernidad tardía, choca con proyectos cosmopolitas y necesidad de cooperación entre pueblos.
+            </p>
+
+            <h4 id="b166-3">Liberalismo y sociedad civil: libertad y sus límites</h4>
+            <p>
+              El liberalismo se presenta como libertades individuales, derechos y límites al poder. Distingue libertades políticas
+              (expresión, asociación, participación) y económicas (propiedad, libre mercado). El capitalismo industrial genera desigualdades,
+              mostrando que libertad formal puede convivir con injusticias materiales; esto prepara la crítica marxista.
+            </p>
+
+            <h4 id="b166-4">Marx, materialismo dialéctico y praxis: teoría para transformar</h4>
+            <p>
+              Para Marx, no basta comprender: importa la praxis transformadora. El materialismo dialéctico interpreta la realidad social desde
+              relaciones de producción y condiciones materiales, mostrando contradicciones (clases, explotación, acumulación).
+              La historia no avanza automáticamente a lo mejor: está atravesada por conflicto, poder e intereses.
+            </p>
+
+            <h4 id="b166-5">Crisis de la Modernidad: razón instrumental y “cansancio” europeo</h4>
+            <p>
+              El siglo XX concentra crisis: el avance científico-técnico no evita catástrofes y puede servir a destrucción.
+              Weber habla de desencantamiento: racionalización que vacía de sentido. La razón puede degradarse en razón instrumental
+              (eficiencia, control, cálculo) separada de fines éticos. Auschwitz simboliza que civilización moderna no garantiza humanidad.
+            </p>
+
+            <h4 id="b166-6">¿Reconstruir la razón? Hermenéutica, Frankfurt y Habermas</h4>
+            <p>
+              Se proponen reconstrucciones: la hermenéutica destaca interpretación, contexto y diálogo. Frankfurt critica la razón instrumental
+              y denuncia modernidad como dominación, buscando recuperar la dimensión crítica. Habermas reorienta hacia acción comunicativa:
+              la razón se reconstruye en diálogo, consenso argumentado e intersubjetividad; democracia requiere esfera pública capaz de legitimar normas.
+            </p>
+
+            <h4 id="b166-7">Democracia participativa y horizonte europeo</h4>
+            <p>
+              La integración europea y la globalización desafían al Estado-nación. Se plantea democracia participativa y sociedad civil activa
+              para sostener legitimidad en espacios supranacionales sin perder pluralidad. Europa aparece como proyecto en construcción:
+              un laboratorio para sostener libertad, justicia y convivencia en un mundo diverso.
+            </p>
+          </article>
+
+          <!-- RECURSOS (Crisis = infografia3.png) -->
+          <section class="recursos" aria-label="Recursos Crisis y reconstrucción">
+            <h3>Recursos visuales</h3>
+
+            <div class="recursos__grid recursos__grid--layoutA">
+              <section class="media">
+                <h4>Infografía</h4>
+                <div class="media__frame">
+                  <img src="./img/infografia3.png" alt="Infografía Crisis y reconstrucción" />
+                </div>
+              </section>
+
+                <section class="media">
+                <h4>Mapa mental</h4>
+                <div class="media__frame">
+                    <img src="./img/mapamental3.png" alt="Mapa mental Crisis y reconstrucción" />
+                </div>
+                </section>
+
+                <section class="media">
+                <h4>Línea del tiempo</h4>
+                <div class="media__frame">
+                    <img src="./img/linea3.png" alt="Línea del tiempo Crisis y reconstrucción" />
+                </div>
+                </section>
+
+          <nav class="pager" aria-label="Navegación">
+            <a class="pager__link" href="#bloque-modernidad">← Anterior</a>
             <a class="pager__link" href="#inicio">Índice ↑</a>
             <a class="pager__link" href="#posnacional">Siguiente →</a>
           </nav>
@@ -445,176 +574,306 @@
 
         <!-- POSNACIONAL -->
         <section class="chapter" id="posnacional">
-          <div class="chapter__header">
+          <header class="chapter__head">
             <h2>Democracia participativa y ciudadanía posnacional</h2>
-            <p class="chapter__lead">
-              Con globalización e integración europea, la ciudadanía ya no se entiende sólo por territorio.
-              Aparecen propuestas como patriotismo constitucional, nueva soberanía y democracia cosmopolita.
+            <p class="lead">
+              Con la globalización y la construcción de la Unión Europea, la ciudadanía deja de depender solo del territorio.
+              Se discuten medios, educación, sociedad civil, soberanía y modelos cosmopolitas de legitimidad democrática.
             </p>
-          </div>
+          </header>
 
-          <div class="grid">
-            <article class="card">
-              <h3 id="concepto-patriotismo">Patriotismo constitucional (Habermas)</h3>
-              <p>
-                Alternativa a ciudadanía nacional: comunidad de ciudadanos basada en principios universalistas de constituciones democráticas,
-                separando adscripción cívica de origen étnico/nacional.
-              </p>
-              <p class="note">
-                Conecta con: <a href="#identidad">identidad europea</a> y <a href="#constitucion">tratado constitucional</a>.
-              </p>
-            </article>
+          <article class="section" id="pos-1">
+            <h3>Nueva soberanía</h3>
+            <p>
+              La soberanía como poder legitimado tiene dos referentes: Estado y ciudadanía. Held sostiene que la idea clásica
+              (indivisible, ilimitada, exclusiva y perpetua) está “muerta”. En su lugar, surge una nueva soberanía ligada a la transformación europea:
+              los conceptos del Estado-nación no bastan para el nuevo marco político que supone la Unión Europea.
+            </p>
+            <p>
+              Se propone “desmembrar” el poder del Estado y repartirlo por abajo (ayuntamientos, asociaciones, cooperativas, empresas)
+              y por arriba (parlamento europeo y otros órganos). La UE se construye como pacto voluntario, a diferencia del Estado moderno
+              que se construyó con coacción y violencia.
+            </p>
+          </article>
 
-            <article class="card" id="soberania">
-              <h3>Nueva soberanía</h3>
-              <p>
-                La soberanía clásica del Estado-nación se debilita: surge reparto del poder “por abajo” (asociaciones, ayuntamientos, cooperativas)
-                y “por arriba” (instituciones europeas). Se busca democratización supraestatal.
-              </p>
-            </article>
-          </div>
-
-          <article class="card" id="cosmopolita">
+          <article class="section" id="pos-2">
             <h3>Democracia cosmopolita</h3>
             <p>
-              La legitimidad basada sólo en mayorías electorales dentro de fronteras se cuestiona; se replantea la “comunidad relevante”.
-              La participación democrática debe pensarse más allá del territorio estatal, con instituciones post-estatales.
+              La democracia necesita reevaluación cuando el Estado-nación pierde funciones y márgenes para procedimientos democráticos.
+              La legitimidad por “gobierno de la mayoría” se cuestiona al redefinirse la “comunidad relevante” en un mundo globalizado.
+              Se vuelve necesario pensar participación más allá de comunidades definidas territorialmente.
             </p>
-
-            <div class="chips">
-              <a class="chip" href="#concepto-accion-comunicativa">Acción comunicativa</a>
-              <a class="chip" href="#constitucion">Proceso constitucional</a>
-            </div>
+            <p>
+              El dilema de Dahrendorf indica que la ciudadanía puede volverse privilegio de nacionales de Estados ricos.
+              El modelo cosmopolita busca enfrentar déficit de integración, exclusión y fragilidad social. Habermas propone ciudadanía posnacional
+              como marco teórico nuevo para esta situación.
+            </p>
           </article>
 
-          <section class="section">
-            <h3 class="section__title">Concepto puente</h3>
-            <div class="cards">
-              <article class="concept" id="concepto-accion-comunicativa">
-                <div class="concept__top">
-                  <h4>Espacio político-comunicativo</h4>
-                  <span class="badge">Concepto</span>
-                </div>
-                <p>
-                  La ciudadanía europea se vincula a debate y negociación continuos: esfera pública transnacional que sostenga consenso y legitimidad.
-                </p>
-                <div class="concept__links">
-                  <a href="#cosmopolita">Volver a democracia cosmopolita</a>
-                  <a href="#constitucion">Ir a proceso constitucional</a>
-                </div>
+          <article class="section" id="pos-3">
+            <h3>La politización de las diferencias</h3>
+            <p>
+              La dialéctica describe una realidad en contradicción constante: la superación de contradicciones toma forma de lucha por reconocimiento.
+              En el reconocimiento se construye identidad y, por tanto, inclusión o exclusión. En décadas recientes, la crisis de la razón y el
+              desmantelamiento de metarrelatos universales (Lyotard) intensifican el problema filosófico de la identidad.
+            </p>
+          </article>
+
+          <article class="section" id="pos-4">
+            <h3>Feminismos</h3>
+            <p>
+              La tradición occidental es patriarcal hasta la Ilustración; el feminismo, como movimiento social que transformó el siglo XX,
+              estudia condiciones de la lucha por igualdad entre sexos y géneros y forma una teoría feminista plural.
+              La producción feminista en filosofía comienza con la Ilustración, cuando se fundamentan estructuras en razón, igualdad y justicia social.
+            </p>
+            <p>
+              En el siglo XIX el feminismo aparece como movimiento social con identidad organizativa (lucha sufragista).
+              Beauvoir analiza la “alteridad” como categoría esencial: la subjetividad necesita del “otro”, y la mujer se convierte en alteridad absoluta
+              cuando las leyes se construyen contra ella.
+            </p>
+          </article>
+
+          <article class="section" id="pos-5">
+            <h3>Luchas identitarias</h3>
+            <p>
+              La diversidad europea es riqueza cultural pero genera problemas de reconocimiento e integración. Comprender al otro implica reconstruir su mundo.
+              Isaiah Berlin representa un pluralismo distinto del relativismo: hay valores incompatibles que no se integran en una escala única.
+              El abandono del universalismo fuerte supone que no hay un único modelo de sociedad perfecta; Berlin propone sentido común y humanidad común
+              (“horizonte humano”) para convivir sin exclusión.
+            </p>
+          </article>
+
+          <article class="section" id="pos-6">
+            <h3>Identidad europea</h3>
+            <p>
+              Derrida sugiere que la identidad europea es el nombre de algo “sin rostro” y en construcción, como el propio proyecto político.
+              Delanty plantea el dilema entre valores mínimos universales y valores amplios que incluyan prácticas de vida y formas culturales particulares.
+              Mill destaca diversidad como motor del progreso: Europa no se estaciona; su rasgo definitorio es la desazón continua.
+            </p>
+          </article>
+
+          <article class="section" id="pos-7">
+            <h3>Una mirada española a Europa: Ortega y Gasset y María Zambrano</h3>
+            <p>
+              Ortega y Zambrano reflexionan sobre Europa desde experiencias de guerras, dictadura y exilio.
+              Ortega adopta una posición “matinalista”: Europa no es fantasía sino realidad previa y más permanente que las naciones.
+              Zambrano habla de Europa en “agonía”: el europeo pasa de idealismo (desde Grecia) a rendirse ante la evidencia de los hechos,
+              viviendo en servidumbre de lo que pasa.
+            </p>
+          </article>
+
+          <article class="section" id="pos-8">
+            <h3>La idea de Europa</h3>
+            <p>
+              La idea de Europa se forja sobre todo en los últimos dos siglos, aunque con reservas conceptuales desde Grecia clásica y Edad Media.
+              Se afianza con ciudadanía de revoluciones burguesas, Estados-nación, expansión democrática y derechos civiles, y con la necesidad de alianzas
+              más fuertes que el “equilibrio europeo”. El siglo XX es tiempo de grandes esfuerzos por “reinventar” Europa.
+            </p>
+          </article>
+
+          <article class="section" id="pos-9">
+            <h3>Constitución supranacional</h3>
+            <p>
+              El Tratado Constitucional tiene carácter supranacional: una constitución estructura un pueblo; un tratado constitucional aglutina voluntades
+              de pueblos y naciones para constituir una asociación. Habermas sostiene que el problema principal no es tener o no constitución,
+              sino dar fundamento político a una unión capaz de ir más allá de una confederación intergubernamental.
+            </p>
+            <p>
+              La unión europea se pensó como respuesta a la crisis de la Segunda Guerra Mundial con objetivos de pacificar Europa y contener Alemania.
+            </p>
+          </article>
+
+          <article class="section" id="pos-10">
+            <h3>El carácter performativo del proyecto europeo</h3>
+            <p>
+              El proceso europeo es performativo: se va haciendo mientras se piensa, se dice y se debate.
+              Debería generar ilusión y participación, no escepticismo y absentismo. Europa también es una actitud (Braidotti).
+              Habermas subraya el efecto catalítico del proceso constitucional como oportunidad de comunicación transnacional,
+              con potencia de profecía de autorrealización.
+            </p>
+            <p>
+              En sociedades plurales, negociación y debate continuo forman parte de la experiencia ciudadana.
+              Habermas propone ciudadanía europea vinculada a un espacio político-comunicativo para debate y consenso continuado,
+              sin negar diferencias.
+            </p>
+          </article>
+
+          <!-- RECURSOS (Posnacional: placeholder) -->
+          <section class="recursos" aria-label="Recursos Posnacional">
+            <h3>Recursos visuales</h3>
+
+            <div class="recursos__grid recursos__grid--layoutA">
+            <section class="media">
+            <h4>Infografía</h4>
+            <div class="media__frame">
+                <img src="./img/infografia4.png" alt="Infografía Posnacional" />
+            </div>
+            </section>
+            <section class="media">
+            <h4>Mapa mental</h4>
+            <div class="media__frame">
+                <img src="./img/mapamental4.png" alt="Mapa mental Posnacional" />
+            </div>
+            </section>
+
+            <section class="media">
+            <h4>Línea del tiempo</h4>
+            <div class="media__frame">
+                <img src="./img/linea4.png" alt="Línea del tiempo Posnacional" />
+            </div>
+            </section>
+
+          <div class="volver">
+            <a href="#inicio">Volver arriba</a>
+          </div>
+        </section>
+
+        <!-- GLOSARIO FUNCIONAL -->
+        <section class="chapter" id="glosario">
+          <header class="chapter__head">
+            <h2>Glosario</h2>
+            <p class="lead">
+              Busca un término para filtrarlo. Puedes añadir o editar definiciones libremente.
+            </p>
+          </header>
+
+          <div class="glosario">
+            <div class="glosario__bar">
+              <input
+                id="glossarySearch"
+                class="glosario__input"
+                type="text"
+                placeholder="Buscar término… (ej. logos, soberanía, secularización)"
+                aria-label="Buscar término del glosario"
+              />
+              <button id="glossaryClear" class="glosario__btn" type="button">Limpiar</button>
+            </div>
+
+            <div id="glossaryList" class="glosario__list">
+              <article class="glosario__item" data-keys="logos mito razon">
+                <h3>Logos</h3>
+                <p>Principio racional y discursivo que sustituye explicaciones míticas; base de la argumentación filosófica.</p>
+                <div class="glosario__links"><a href="#sec-1-1">Ver sección</a></div>
+              </article>
+
+              <article class="glosario__item" data-keys="episteme conocimiento verdadero">
+                <h3>Episteme</h3>
+                <p>Conocimiento fundamentado y verdadero, en contraste con la doxa (opinión).</p>
+                <div class="glosario__links"><a href="#sec-1-1">Ver sección</a></div>
+              </article>
+
+              <article class="glosario__item" data-keys="doxa opinion">
+                <h3>Doxa</h3>
+                <p>Opinión o creencia sin demostración estricta; se contrapone a la episteme.</p>
+                <div class="glosario__links"><a href="#sec-1-1">Ver sección</a></div>
+              </article>
+
+              <article class="glosario__item" data-keys="physis naturaleza nomos convencion">
+                <h3>Physis / Nomos</h3>
+                <p>Physis: naturaleza. Nomos: convención/ley. Distinción clave para cuestionar lo “dado” y buscar validez universal.</p>
+                <div class="glosario__links"><a href="#sec-1-2">Ver sección</a></div>
+              </article>
+
+              <article class="glosario__item" data-keys="isonomia igualdad ley democracia">
+                <h3>Isonomía</h3>
+                <p>Igualdad ante la ley; condición vinculada al ideal democrático de deliberación pública.</p>
+                <div class="glosario__links"><a href="#sec-1-3">Ver sección</a></div>
+              </article>
+
+              <article class="glosario__item" data-keys="paideia educacion ciudadano">
+                <h3>Paideia</h3>
+                <p>Formación del ciudadano para la vida pública y ética; ideal educativo griego.</p>
+                <div class="glosario__links"><a href="#sec-1-3">Ver sección</a></div>
+              </article>
+
+              <article class="glosario__item" data-keys="ius derecho romano ius naturale ius gentium">
+                <h3>Ius / Derecho romano</h3>
+                <p>Marco jurídico romano como razón práctica; incluye distinciones que abren la idea de derechos universalizables.</p>
+                <div class="glosario__links"><a href="#sec-2-1">Ver sección</a></div>
+              </article>
+
+              <article class="glosario__item" data-keys="secularizacion reforma iglesia estado">
+                <h3>Secularización</h3>
+                <p>Separación progresiva entre Iglesia y Estado; transformación clave tras la ruptura religiosa.</p>
+                <div class="glosario__links"><a href="#sec-6">Ver sección</a></div>
+              </article>
+
+              <article class="glosario__item" data-keys="humanismo humanitas renacimiento">
+                <h3>Humanismo / Humanitas</h3>
+                <p>Movimiento renacentista centrado en el ser humano, el retorno a clásicos y la educación integral.</p>
+                <div class="glosario__links"><a href="#sec-7">Ver sección</a></div>
+              </article>
+
+              <article class="glosario__item" data-keys="ilustracion sapere aude razon critica">
+                <h3>Ilustración</h3>
+                <p>Racionalidad crítica y confianza en progreso; invita a pensar por cuenta propia (Sapere aude).</p>
+                <div class="glosario__links"><a href="#mod-6">Ver sección</a></div>
+              </article>
+
+              <article class="glosario__item" data-keys="razon instrumental weber crisis modernidad">
+                <h3>Razón instrumental</h3>
+                <p>Racionalidad orientada a eficiencia/control (medios) sin discusión ética sobre fines; crítica central del siglo XX.</p>
+                <div class="glosario__links"><a href="#b166-5">Ver sección</a></div>
+              </article>
+
+              <article class="glosario__item" data-keys="habermas accion comunicativa esfera publica consenso">
+                <h3>Acción comunicativa</h3>
+                <p>Reconstrucción de la razón mediante diálogo, consenso argumentado e intersubjetividad (Habermas).</p>
+                <div class="glosario__links"><a href="#b166-6">Ver sección</a></div>
+              </article>
+
+              <article class="glosario__item" data-keys="ciudadania posnacional union europea cosmopolita">
+                <h3>Ciudadanía posnacional</h3>
+                <p>Modelo de ciudadanía más allá del Estado-nación, adecuado a globalización e integración supranacional.</p>
+                <div class="glosario__links"><a href="#pos-2">Ver sección</a></div>
+              </article>
+
+              <article class="glosario__item" data-keys="soberania union europea">
+                <h3>Soberanía</h3>
+                <p>Concepto que se redefine en la UE; se discute su redistribución “por abajo” y “por arriba”.</p>
+                <div class="glosario__links"><a href="#pos-1">Ver sección</a></div>
               </article>
             </div>
-          </section>
-
-          <nav class="pager" aria-label="Navegación entre secciones">
-            <a class="pager__link" href="#modernidad">← Anterior</a>
-            <a class="pager__link" href="#inicio">Índice ↑</a>
-            <a class="pager__link" href="#feminismos">Siguiente →</a>
-          </nav>
-        </section>
-
-        <!-- FEMINISMOS / IDENTIDAD -->
-        <section class="chapter" id="feminismos">
-          <div class="chapter__header">
-            <h2>Feminismos y luchas identitarias</h2>
-            <p class="chapter__lead">
-              La crisis de metarrelatos universales reabre la cuestión de identidad y reconocimiento.
-              El feminismo articula teoría y movimiento social para igualdad de sexos y géneros.
-            </p>
           </div>
 
-          <div class="grid">
-            <article class="card">
-              <h3>Teoría feminista</h3>
-              <p>
-                Se desarrolla desde la Ilustración (razón, igualdad, justicia), y en el siglo XIX aparece como movimiento social
-                con organización propia (sufragismo). Simone de Beauvoir analiza la “alteridad” y cómo el “otro” se vuelve objeto.
-              </p>
-            </article>
-
-            <article class="card">
-              <h3>Luchas identitarias</h3>
-              <p>
-                Europa es diversa: riqueza cultural y, a la vez, retos de integración y reconocimiento.
-                El pluralismo de valores (Isaiah Berlin) sostiene que muchas visiones de vida buena pueden ser incompatibles sin ser relativismo total.
-              </p>
-            </article>
+          <div class="volver">
+            <a href="#inicio">Volver arriba</a>
           </div>
-
-          <nav class="pager" aria-label="Navegación entre secciones">
-            <a class="pager__link" href="#posnacional">← Anterior</a>
-            <a class="pager__link" href="#inicio">Índice ↑</a>
-            <a class="pager__link" href="#identidad">Siguiente →</a>
-          </nav>
         </section>
-
-        <section class="chapter" id="identidad">
-          <div class="chapter__header">
-            <h2>Identidad europea</h2>
-            <p class="chapter__lead">
-              La identidad europea aparece “sin rostro” y en construcción: tensión entre valores mínimos universalistas
-              y valores más amplios ligados a prácticas culturales diversas.
-            </p>
-          </div>
-
-          <article class="card">
-            <h3>Rasgo definitorio: inquietud y transformación</h3>
-            <p>
-              La diversidad impulsa progreso, pero también produce “desazón continua”: Europa se reinterpreta sin detenerse,
-              como proyecto siempre en debate.
-            </p>
-            <p class="note">
-              Conecta con: <a href="#ortega-zambrano">Ortega y Zambrano</a> y <a href="#constitucion">proceso constitucional</a>.
-            </p>
-          </article>
-
-          <section class="section" id="ortega-zambrano">
-            <h3 class="section__title">Una mirada española: Ortega y Gasset y María Zambrano</h3>
-            <article class="card">
-              <ul class="list">
-                <li><strong>Ortega:</strong> postura “matinalista”; Europa como realidad previa y más permanente que las naciones.</li>
-                <li><strong>Zambrano:</strong> Europa en “agonía”; crítica a esclavitud ante los hechos y pérdida del impulso idealista.</li>
-              </ul>
-            </article>
-          </section>
-
-          <section class="section" id="constitucion">
-            <h3 class="section__title">Constitución supranacional y carácter performativo</h3>
-            <article class="card">
-              <p>
-                El tratado constitucional se diferencia del “tratado constitucional” clásico: busca estructurar una asociación supranacional.
-                El proyecto europeo se “hace” mientras se piensa y se debate: el proceso constitucional puede catalizar comunicación transnacional
-                y participación, si logra ilusionar en lugar de generar absentismo.
-              </p>
-
-              <div class="callout">
-                <h4>Debate guiado</h4>
-                <p>
-                  ¿Qué necesitaría un espacio político-comunicativo europeo para que la ciudadanía participe de forma real y sostenida?
-                  ¿Cómo se negocian diferencias sin borrar pluralidad?
-                </p>
-                <div class="callout__actions">
-                  <a class="btn btn--small" href="#posnacional">Volver a ciudadanía posnacional</a>
-                  <a class="btn btn--small btn--ghost" href="#inicio">Volver al inicio</a>
-                </div>
-              </div>
-            </article>
-          </section>
-
-          <nav class="pager" aria-label="Navegación entre secciones">
-            <a class="pager__link" href="#feminismos">← Anterior</a>
-            <a class="pager__link" href="#inicio">Índice ↑</a>
-            <a class="pager__link" href="#intro">Siguiente →</a>
-          </nav>
-        </section>
-
-        <footer class="footer">
-          <p>
-            Hiperlibro académico · HTML + CSS ·
-            <a href="#inicio">volver arriba</a>
-          </p>
-        </footer>
       </main>
     </div>
+
+    <!-- JS: filtro del glosario -->
+    <script>
+      const input = document.getElementById("glossarySearch");
+      const clearBtn = document.getElementById("glossaryClear");
+      const items = Array.from(document.querySelectorAll(".glosario__item"));
+
+      function normalize(s) {
+        return (s || "")
+          .toLowerCase()
+          .normalize("NFD")
+          .replace(/[\u0300-\u036f]/g, "");
+      }
+
+      function filterGlossary() {
+        const q = normalize(input.value.trim());
+        items.forEach((item) => {
+          const text = normalize(item.innerText);
+          const keys = normalize(item.getAttribute("data-keys"));
+          const show = !q || text.includes(q) || keys.includes(q);
+          item.style.display = show ? "" : "none";
+        });
+      }
+
+      input.addEventListener("input", filterGlossary);
+      clearBtn.addEventListener("click", () => {
+        input.value = "";
+        filterGlossary();
+        input.focus();
+      });
+
+      filterGlossary();
+    </script>
   </body>
 </html>
